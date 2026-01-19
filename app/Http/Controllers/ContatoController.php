@@ -28,7 +28,7 @@ class ContatoController extends Controller
             // Enviar email via Resend
             $resend->emails->send([
                 'from' => 'Contato Site <onboarding@resend.dev>',
-                'to' => ['yohann.antunes18@gmail.com'],
+                'to' => ['rodriguesantunes.adv@gmail.com'],
                 'reply_to' => $validated['email'],
                 'subject' => 'Novo Contato do Site - ' . $validated['nome'],
                 'html' => $html
